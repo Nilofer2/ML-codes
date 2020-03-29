@@ -1,0 +1,30 @@
+Error Correction:
+Deceits the error and finds the location of error. Once we find it, we can flip it.
+
+Hamming code:
+detects and corrects Single bit errors only.
+If the receiver can correct the error = its more efficient.
+Detecting the error is easy but finding the location is difficult.
+
+Bits =m
+Redundancy =k
+Total message sent=m+k
+The value of k must satisfy the condition 2^k>=m+k+1. 
+For successful transmission m+k+1 bits must be at the receiver.
+The redundancy bits are added after the data .- error detection.
+The redundancy bits will be embedded in the data.- in error correction.
+
+If k=4 then in the data the powers of 2 till the value of k I.e., 2^0,2^1,2^2,2^3 (this is the bit count, the position). 
+
+Bit position should start with 1 always and not 0. 
+
+Convert the bit position into binary, r1=xxx1-r2=xx1x-r3=x1xx-r4=1xxx. 
+
+At the receiver side the repeat the same process and look for the bits of the redundancy and perform the XOR operation.
+
+
+
+Aim , explain the algorithm , code , result.
+
+
+
